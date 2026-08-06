@@ -1,0 +1,375 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Jubair.fun | Creative Playground</title>
+    <!-- Google Fonts for retro-digital and premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app">
+      
+      <!-- ==========================================
+           1. HOMEPAGE PORTAL (GRID OF PROJECTS)
+           ========================================== -->
+      <section id="page-home" class="spa-page active">
+        <header class="home-header">
+          <div class="logo-group">
+            <span class="logo-dot-glow"></span>
+            <h1>JUBAIR<span class="logo-highlight">.FUN</span></h1>
+          </div>
+          <p class="subtitle">A creative playground of interactive web experiments.</p>
+        </header>
+
+        <div class="experiments-grid">
+          <!-- Card 1: Draw a Perfect Circle -->
+          <a href="#circle" class="project-card large-card card-circle">
+            <div class="card-visual" style="background: #090d16; position: relative;">
+              <svg class="preview-svg" viewBox="0 0 100 100">
+                <circle cx="50" cy="50" r="32" class="preview-circle-guide" />
+                <circle cx="50" cy="50" r="32" class="preview-circle-drawn" />
+                <circle cx="50" cy="50" r="2" fill="#10b981" />
+              </svg>
+              <span class="preview-circle-text">99.5%</span>
+            </div>
+            <div class="card-info">
+              <h3>Perfect Circle</h3>
+              <p>Test your drawing precision against mathematical circularity.</p>
+              <div class="badge neon-green">⚡ PLAYABLE</div>
+            </div>
+          </a>
+
+          <!-- Card 7: DX-Ball Arcade -->
+          <a href="#dxball" class="project-card large-card card-dxball">
+            <div class="card-visual" style="background: #070a13; display: flex; align-items: center; justify-content: center; position: relative;">
+              <svg viewBox="0 0 100 100" class="preview-svg">
+                <rect x="25" y="75" width="50" height="10" rx="4" fill="#06b6d4" />
+                <circle cx="50" cy="55" r="8" fill="#f59e0b" />
+                <rect x="20" y="25" width="18" height="8" rx="2" fill="#ef4444" />
+                <rect x="41" y="25" width="18" height="8" rx="2" fill="#3b82f6" />
+                <rect x="62" y="25" width="18" height="8" rx="2" fill="#10b981" />
+              </svg>
+            </div>
+            <div class="card-info">
+              <h3>DX-Ball (1996)</h3>
+              <p>Retro brick-breaking game featuring 20 dynamic levels, power-ups, and audio synth.</p>
+              <div class="badge neon-cyan">⚡ PLAYABLE</div>
+            </div>
+          </a>
+
+          <!-- Card 3: Color Cascade -->
+          <a href="#color-cascade" class="project-card small-card card-cascade">
+            <div class="card-visual" style="background: #f8fafc;">
+              <svg viewBox="0 0 100 100" class="small-preview-svg">
+                <rect x="22" y="25" width="16" height="50" rx="4" fill="#3b82f6" transform="rotate(-30 50 50)"/>
+                <rect x="34" y="25" width="16" height="50" rx="4" fill="#10b981" transform="rotate(-10 50 50)"/>
+                <rect x="46" y="25" width="16" height="50" rx="4" fill="#f59e0b" transform="rotate(10 50 50)"/>
+                <rect x="58" y="25" width="16" height="50" rx="4" fill="#ef4444" transform="rotate(30 50 50)"/>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h3>Color Cascade</h3>
+              <div class="badge neon-cyan">Interactive</div>
+            </div>
+          </a>
+
+          <!-- Card 4: Soundwave Synth -->
+          <a href="#soundwave-synth" class="project-card small-card card-synth">
+            <div class="card-visual" style="background: #f8fafc;">
+              <svg viewBox="0 0 100 100" class="small-preview-svg">
+                <line x1="25" y1="50" x2="25" y2="70" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round"/>
+                <line x1="37" y1="50" x2="37" y2="80" stroke="#a78bfa" stroke-width="6" stroke-linecap="round"/>
+                <line x1="50" y1="50" x2="50" y2="20" stroke="#c084fc" stroke-width="6" stroke-linecap="round"/>
+                <line x1="63" y1="50" x2="63" y2="75" stroke="#a78bfa" stroke-width="6" stroke-linecap="round"/>
+                <line x1="75" y1="50" x2="75" y2="60" stroke="#8b5cf6" stroke-width="6" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h3>Soundwave Synth</h3>
+              <div class="badge neon-purple">Audio Experiment</div>
+            </div>
+          </a>
+
+          <!-- Card 6: Pattern Generator -->
+          <a href="#pattern-generator" class="project-card small-card card-pattern">
+            <div class="card-visual" style="background: #f8fafc;">
+              <svg viewBox="0 0 100 100" class="small-preview-svg">
+                <rect x="25" y="25" width="50" height="50" rx="6" fill="none" stroke="#2563eb" stroke-width="4"/>
+                <circle cx="50" cy="50" r="20" fill="none" stroke="#f59e0b" stroke-width="4"/>
+                <rect x="35" y="35" width="30" height="30" fill="none" stroke="#ef4444" stroke-width="2" transform="rotate(45 50 50)"/>
+              </svg>
+            </div>
+            <div class="card-info">
+              <h3>Pattern Generator</h3>
+              <div class="badge neon-blue">Generative Art</div>
+            </div>
+          </a>
+
+          <!-- Card 5: Life Stats -->
+          <a href="#life-stats" class="project-card small-card card-stats">
+            <div class="card-visual" style="background: linear-gradient(135deg, #1e1b4b 0%, #311042 100%); display: flex; align-items: center; justify-content: center;">
+              <div class="stats-preview" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <div class="heart-pulse-icon" style="font-size: 2.2rem;">❤️</div>
+                <div class="stats-ticker-val" style="color: #f59e0b; font-size: 1rem; margin-top: 4px; font-weight: bold;">2,384,102</div>
+              </div>
+            </div>
+            <div class="card-info">
+              <h3>Life Stats</h3>
+              <div class="badge neon-orange">⚡ LIVE COUNTERS</div>
+            </div>
+          </a>
+        </div>
+
+        <footer class="home-footer">
+          <p>© 2026 jubair.fun • Made with ❤️</p>
+        </footer>
+      </section>
+
+      <!-- ==========================================
+           2. PERFECT CIRCLE GAME PAGE
+           ========================================== -->
+      <section id="page-circle" class="spa-page hidden">
+        <canvas id="paint-canvas"></canvas>
+        <div id="center-dot" class="center-dot"></div>
+
+        <header class="hud-header">
+          <div class="hud-left">
+            <a href="#" class="back-home-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              <span>Home</span>
+            </a>
+          </div>
+          <div class="hud-right">
+            <div class="best-badge">
+              <span class="badge-label">BEST</span>
+              <span id="best-score-val" class="badge-val">0.0%</span>
+            </div>
+            <button id="reset-best-btn" class="hud-icon-btn" title="Reset Best Score">
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/>
+                <path d="M3 3v5h5"/>
+              </svg>
+            </button>
+            <button id="sound-toggle" class="hud-icon-btn" aria-label="Toggle Sound">
+              <svg class="icon icon-sound-on" viewBox="0 0 24 24" width="16" height="16">
+                <path d="M12 3v18M18.36 5.64a9 9 0 0 1 0 12.72M15.54 8.46a5 5 0 0 1 0 7.08" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+              <svg class="icon icon-sound-off hidden" viewBox="0 0 24 24" width="16" height="16">
+                <path d="M12 3v18M10 9H6v6h4l5 5V4L10 9zM22 9l-6 6M16 9l6 6" fill="none" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </button>
+          </div>
+        </header>
+
+        <div id="game-overlay">
+          <h2 id="game-title" class="game-title">Draw a circle around the dot</h2>
+          <div id="score-container" class="score-container hidden">
+            <div class="score-data">
+              <span id="score-num" class="score-number">0.0</span>
+              <span id="score-percent" class="score-percent">%</span>
+            </div>
+            <div id="score-status" class="score-status-text">New best score</div>
+            <div id="reset-hint" class="reset-hint-text">Tap anywhere to try again</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           6. LIFE STATS PAGE
+           ========================================== -->
+      <section id="page-life-stats" class="spa-page hidden">
+        <header class="game-nav-header">
+          <a href="#" class="back-home-btn">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+            <span>Home</span>
+          </a>
+          <h2>Life Stats</h2>
+        </header>
+
+        <div class="stats-game-container">
+          <!-- Setup screen to input birthdate -->
+          <div class="stats-input-card" id="stats-input-card">
+            <h3>When were you born?</h3>
+            <input type="date" id="birthdate-input" class="birthdate-input" max="2026-08-01">
+            <button id="calculate-stats-btn" class="calculate-btn">Show My Stats</button>
+          </div>
+
+          <!-- Stats dashboard (hidden by default) -->
+          <div class="stats-dashboard hidden" id="stats-dashboard">
+            <div class="stats-header-info">
+              <h3>Your Life in Ticking Numbers</h3>
+              <p>Since your birth on <span id="birthdate-display" class="highlight-date">May 15, 1998</span>, you have experienced:</p>
+            </div>
+            
+            <div class="stats-grid">
+              <!-- Stat 1: Heartbeats -->
+              <div class="stat-box">
+                <span class="stat-emoji heart-beat">❤️</span>
+                <span class="stat-val-ticking" id="stat-heartbeats">0</span>
+                <span class="stat-label">Heartbeats</span>
+              </div>
+
+              <!-- Stat 2: Breaths -->
+              <div class="stat-box">
+                <span class="stat-emoji breath-wind">💨</span>
+                <span class="stat-val-ticking" id="stat-breaths">0</span>
+                <span class="stat-label">Breaths Taken</span>
+              </div>
+
+              <!-- Stat 3: Sleep -->
+              <div class="stat-box">
+                <span class="stat-emoji">😴</span>
+                <span class="stat-val-ticking" id="stat-sleep">0</span>
+                <span class="stat-label">Hours of Sleep</span>
+              </div>
+
+              <!-- Stat 4: Earth Travel -->
+              <div class="stat-box">
+                <span class="stat-emoji">🌍</span>
+                <span class="stat-val-ticking" id="stat-earth-travel">0</span>
+                <span class="stat-label">km Traveled around Sun</span>
+              </div>
+
+              <!-- Stat 5: Population increase -->
+              <div class="stat-box">
+                <span class="stat-emoji">👶</span>
+                <span class="stat-val-ticking" id="stat-population">0</span>
+                <span class="stat-label">World Population Growth</span>
+              </div>
+
+              <!-- Stat 6: Tectonic drift -->
+              <div class="stat-box">
+                <span class="stat-emoji">⛰️</span>
+                <span class="stat-val-ticking" id="stat-tectonic">0</span>
+                <span class="stat-label">cm of Tectonic Plate Drift</span>
+              </div>
+            </div>
+
+            <button class="stats-reenter-btn" id="stats-reenter-btn">← Enter Another Birthdate</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           4. COLOR CASCADE PAGE
+           ========================================== -->
+      <section id="page-color-cascade" class="spa-page hidden">
+        <header class="hud-header">
+          <div class="hud-left">
+            <a href="#" class="back-home-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              <span>Home</span>
+            </a>
+          </div>
+          <div class="hud-right">
+            <span class="game-title">Color Cascade</span>
+          </div>
+        </header>
+        <div class="cascade-container">
+          <canvas id="cascade-canvas"></canvas>
+          <div class="cascade-controls">
+            <button id="clear-cascade-btn" class="hud-icon-btn" style="padding: 10px 20px; width: auto;" title="Clear Canvas">Clear Canvas</button>
+            <button id="mode-cascade-btn" class="hud-icon-btn" style="padding: 10px 20px; width: auto;" title="Change Color Palette">Change Palette</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           5. SOUNDWAVE SYNTH PAGE
+           ========================================== -->
+      <section id="page-soundwave-synth" class="spa-page hidden">
+        <header class="hud-header">
+          <div class="hud-left">
+            <a href="#" class="back-home-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              <span>Home</span>
+            </a>
+          </div>
+          <div class="hud-right">
+            <span class="game-title">Soundwave Synth</span>
+          </div>
+        </header>
+        <div class="synth-container">
+          <canvas id="synth-canvas"></canvas>
+          <div class="synth-controls">
+            <span class="label">Drag / tap grid to play waves</span>
+            <button id="type-synth-btn" class="hud-icon-btn" style="padding: 10px 20px; width: auto;">Oscillator: SINE</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           7. PATTERN GENERATOR PAGE
+           ========================================== -->
+      <section id="page-pattern-generator" class="spa-page hidden">
+        <header class="hud-header">
+          <div class="hud-left">
+            <a href="#" class="back-home-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              <span>Home</span>
+            </a>
+          </div>
+          <div class="hud-right">
+            <span class="game-title">Pattern Generator</span>
+          </div>
+        </header>
+        <div class="pattern-container">
+          <canvas id="pattern-canvas"></canvas>
+          <div class="pattern-controls">
+            <button id="type-pattern-btn" class="hud-icon-btn" style="padding: 10px 20px; width: auto;">Next Pattern</button>
+            <button id="clear-pattern-btn" class="hud-icon-btn" style="padding: 10px 20px; width: auto;">Reset</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           8. DX-BALL ARCADE GAME PAGE
+           ========================================== -->
+      <section id="page-dxball" class="spa-page hidden">
+        <header class="hud-header">
+          <div class="hud-left">
+            <a href="#" class="back-home-btn">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="19" y1="12" x2="5" y2="12"></line>
+                <polyline points="12 19 5 12 12 5"></polyline>
+              </svg>
+              <span>Home</span>
+            </a>
+          </div>
+          <div class="hud-right">
+            <span class="game-title">DX-Ball Arcade (1996)</span>
+          </div>
+        </header>
+        <div class="dxball-container">
+          <canvas id="dxball-canvas"></canvas>
+        </div>
+      </section>
+
+      <!-- Toast Notification for minor warnings -->
+      <div id="toast-notification" class="toast hidden">
+        <span id="toast-text">Warning</span>
+      </div>
+    </div>
+    
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
