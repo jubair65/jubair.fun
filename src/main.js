@@ -1,5 +1,9 @@
 import './style.css';
 import { dxBallModule } from './games/dxball/DXBallModule.js';
+import { inject } from '@vercel/analytics';
+
+// Initialize Vercel Web Analytics
+inject();
 
 // ==========================================
 // PHYSICALLY MODELED PARTICLE SYSTEM
