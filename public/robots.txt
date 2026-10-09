@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jubairfun.vercel.app/sitemap.xml
